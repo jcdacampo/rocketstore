@@ -1,6 +1,20 @@
-$blue: blue;
-$green: green;
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 /**
- Aqui vai as variaveis de cor, breakpoints, fonts
- */
+* Cores
+*/
+$color-fuchsia: #db3b61;
+$color-french: #ef3f61;
+$color-dark-gray: #3a3a59;
+$color-light-gray: #555574;
+
+/**
+* Breakpoints
+*/
+
+/**
+* Fontes
+*/
+h1 {
+  font-family: 'Quicksand', sans-serif;
+}

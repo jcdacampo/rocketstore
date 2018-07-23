@@ -1,7 +1,6 @@
 <style>
   @import "../dist/css/main.min.css";
 </style>
-
 <template>
   <div id="app">
     <div class="">
@@ -16,9 +15,8 @@
 </template>
 
 <script>
-
-export default {
-  name: 'App'
-}
+  export default {
+    name: 'App'
+  }
 </script>
 

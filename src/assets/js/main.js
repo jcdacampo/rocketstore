@@ -1,1 +1,4 @@
-console.log('deuuuu');
+
+$(document).ready(function () {
+  console.log('deu');
+});
