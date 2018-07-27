@@ -9,6 +9,12 @@
 </template>
 
 <script>
+  import {Main} from '../assets/js/class/Main';
+
+  var main = new Main();
+
+  main.teste('Inicio');
+
   export default {
     name: 'Inicio'
   }
