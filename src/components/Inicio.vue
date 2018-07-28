@@ -9,9 +9,9 @@
 </template>
 
 <script>
-  import {Main} from '../assets/js/class/Main';
+  import {ClassFuncoes} from '../assets/js/class/ClassFuncoes';
 
-  var main = new Main();
+  var main = new ClassFuncoes();
 
   main.teste('Inicio');
 

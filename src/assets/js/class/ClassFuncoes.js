@@ -1,4 +1,4 @@
-export class Main {
+export class ClassFuncoes {
   constructor(){
     console.log('teste');
   }

@@ -2,7 +2,7 @@ let gulp = require('gulp');
 let rename = require('gulp-rename');
 let sass = require('gulp-sass');
 let uglify = require('gulp-uglify');
-let uglifyes = require('gulp-uglify-es');
+let uglifyes = require('gulp-uglify-es').default;
 
 let styleSRC = './src/assets/scss/*.scss';
 let styleDIST = './dist/css/';
@@ -53,6 +53,7 @@ gulp.task('uglify-class', function () {
 gulp.task('watch', function () {
   gulp.watch(scriptSRC, ['scripts']);
   gulp.watch('./**/*.scss', ['styles']);
+  gulp.watch(scriptClassSRC, ['uglify-class']);
 });
 
 /**

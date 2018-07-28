@@ -41,7 +41,8 @@
 </template>
 
 <script>
-  // import Main from '../dist/js/main.min.js'
+  import {ClassFuncoes} from '../dist/js/class/ClassFuncoes.min';
+  let funcoes = new ClassFuncoes;
 
   export default {
     name: 'App'
