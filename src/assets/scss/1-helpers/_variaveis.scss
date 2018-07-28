@@ -3,18 +3,32 @@
 /**
 * Cores
 */
+$branco: white;
 $color-fuchsia: #db3b61;
 $color-french: #ef3f61;
 $color-dark-gray: #3a3a59;
 $color-light-gray: #555574;
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$instagram: #c32aa3;
+$youtube: #ff0000;
 
 /**
 * Breakpoints
 */
+$screen-xs: 480px; // Extra small screen
+$screen-sm: 768px;// Small screen
+$screen-md: 992px; // Medium screen
+$screen-lg: 1200px; // Large screen
+$screen-xlg: 1600px; // Extra Large screen
+$screen-xxlg: 1900px; // Extra Large screen
 
 /**
 * Fontes
 */
-h1 {
-  font-family: 'Quicksand', sans-serif;
-}
+$quick-sand: 'Quicksand', sans-serif !important;
+
+/**
+ * Borda
+ */
+$radius-4: 4px;

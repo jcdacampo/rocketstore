@@ -1,0 +1,50 @@
+.header {
+  .header_infos {
+    background-color: $color-dark-gray;
+    height: 23px;
+    padding: 0 !important;
+    .header_infos_social {
+      i {
+        width: 30px;
+      }
+      a {
+        color: white;
+        height: 23px;
+        border-radius: $radius-4;
+        transition: background-color 0.1s linear;
+        &:first-child {
+          margin-left: 10px;
+        }
+        &.facebook:hover {
+          background-color: $facebook;
+        }
+        &.twitter:hover {
+          background-color: $twitter;
+        }
+        &.instagram:hover {
+          background-color:  $instagram;
+        }
+        &.youtube:hover {
+          background-color: $youtube;
+        }
+      }
+    }
+    .header_infos_contato {
+      i {
+        color: white;
+        @media screen and (max-width: 360px) {
+          padding-right: 5px;
+        }
+      }
+      span {
+        color: $branco;
+        font-size: 13px;
+        padding-right: 5px;
+        padding-top: 1px;
+        @media screen and (max-width: 360px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

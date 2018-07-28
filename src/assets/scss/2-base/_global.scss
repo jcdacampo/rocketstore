@@ -1,3 +1,22 @@
 /**
 Aqui vai configurações globais, como html, cor de link, img, enfim
  */
+html, body {
+  font-family: $quick-sand;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.columns {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.columns > .column:first-child {
+  padding-left: 0 !important;
+}
+.columns > .column:last-child {
+  padding-right: 0 !important;
+}
