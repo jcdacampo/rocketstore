@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bulma-extensions": "^2.2.1",
     "html-webpack-externals-plugin": "^3.8.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"

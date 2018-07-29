@@ -9,12 +9,6 @@
 </template>
 
 <script>
-  import {ClassFuncoes} from '../assets/js/class/ClassFuncoes';
-
-  var main = new ClassFuncoes();
-
-  main.teste('Inicio');
-
   export default {
     name: 'Inicio'
   }

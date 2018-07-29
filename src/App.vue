@@ -7,7 +7,7 @@
 </style>
 <template>
   <div id="app">
-    <div class="hero is-fullhd header">
+    <div class="hero container is-fullhd header">
       <div class="header_infos">
         <div class="header_infos_social">
             <a class="is-pulled-left facebook"><i class="fab fa-facebook-f has-text-centered"></i></a>
@@ -16,19 +16,88 @@
             <a class="is-pulled-left youtube"><i class="fab fa-youtube has-text-centered"></i></a>
         </div>
         <div class="header_infos_contato is-pulled-right">
-          <i class="fa fa-phone"></i>
+          <a class="tooltip is-tooltip-left is-hidden-desktop" data-tooltip="Precisa de ajuda?" href="">
+            <i class="fas fa-question-circle"></i>
+          </a>
+          <button class="tooltip is-tooltip-left" data-tooltip="(49) 3323-6978"><i class="fa fa-phone"></i></button>
           <span class="has-text-weight-semibold">Converse conosco: (49) 3323-6978</span>
         </div>
       </div>
       <div class="columns header_header">
-        <div class="column header_logo is-one-quarter">
+        <div class="column header_logo is-one-fifth is-flex is-vertical-center">
           <img class="image" src="../src/assets/images/logo.png">
         </div>
-        <div class="column header_pesquisa is-half">
-
+        <div class="column header_pesquisa hero">
+          <form class="search-form">
+            <input value="" placeholder="Esta procurando algo?" class="search-input">
+            <button type="submit" class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+            <div class="search-option">
+              <div>
+                <input name="type" type="radio" value="type-informatica" id="type-informatica">
+                <label for="type-informatica">
+                  <i class="fas fa-desktop"></i>
+                  <span>Informática</span>
+                </label>
+              </div>
+              <div>
+                <input name="type" type="radio" value="type-celulares" id="type-celulares">
+                <label for="type-celulares">
+                  <i class="fas fa-mobile-alt"></i>
+                  <span>Celulares</span>
+                </label>
+              </div>
+              <div>
+                <input name="type" type="radio" value="type-games" id="type-games">
+                <label for="type-games">
+                  <i class="fas fa-gamepad"></i>
+                  <span>Games</span>
+                </label>
+              </div>
+              <div>
+                <input name="type" type="radio" value="type-perifericos" id="type-perifericos" checked="">
+                <label for="type-perifericos">
+                  <i class="fas fa-headphones"></i>
+                  <span>Periféricos</span>
+                </label>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="column header_acoes is-one-quarter">
-
+        <div class="column header_acoes is-one-quarter is-flex is-vertical-center">
+          <div class="header_acoes_icones is-flex is-vertical-center">
+            <div class="header_acoes_saudacao is-paddingless">
+              <p>Boa tarde,</p>
+              <p class="has-text-weight-bold">Jean</p>
+            </div>
+            <div class="header_acoes_icones_usuario">
+              <router-link class="tooltip is-tooltip-bottom" data-tooltip="Minha conta" to="/minha-conta">
+                <i class="fas fa-user"></i>
+              </router-link>
+            </div>
+            <div class="header_acoes_icones_favs">
+              <a class="tooltip is-tooltip-bottom" data-tooltip="Favoritos" href="">
+                <i class="fas fa-heart"></i>
+              </a>
+            </div>
+            <div class="header_acoes_icones_carrinho">
+              <router-link to="/carrinho">
+                <i class="badge fas fa-shopping-cart" data-badge="0"></i>
+              </router-link>
+            </div>
+            <div class="header_acoes_total">
+              <router-link to="/carrinho">
+                <p>R$</p>
+                <p class="has-text-weight-bold">0,00</p>
+              </router-link>
+            </div>
+          </div>
+          <div class="header_acoes_ajuda is-hidden-touch">
+            <a class="tooltip is-tooltip-left" data-tooltip="Precisa de ajuda?" href="">
+              <i class="fas fa-question-circle"></i>
+            </a>
+          </div>
         </div>
       </div>
       <div class="columns header_menu">
@@ -46,8 +115,6 @@
           <li><router-link to="/fones">Fones</router-link></li>
           <li><router-link to="/entrar">Entrar</router-link></li>
           <li><router-link to="/registrar">Registrar</router-link></li>
-          <li><router-link to="/minha-conta">Minha conta</router-link></li>
-          <li><router-link to="/carrinho">Carrinho</router-link></li>
           <li><router-link to="/checkout/">Checkout</router-link></li>
         </ul>
       </div>
@@ -57,9 +124,6 @@
 </template>
 
 <script>
-  import {ClassFuncoes} from '../dist/js/class/ClassFuncoes.min';
-  let funcoes = new ClassFuncoes;
-
   export default {
     name: 'App'
   }

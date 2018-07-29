@@ -1,13 +1,14 @@
 /**
 Aqui vai configurações globais, como html, cor de link, img, enfim
  */
-html, body {
+body, button, input, select, textarea{
   font-family: $quick-sand;
 }
 
 .is-vertical-center {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .columns {
