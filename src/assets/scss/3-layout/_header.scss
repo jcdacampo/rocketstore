@@ -53,12 +53,14 @@
   }
   .header_header {
     .header_logo {
+      padding-bottom: 0;
       img {
         max-width: 180px;
         margin: auto;
       }
     }
     .header_pesquisa {
+      padding-bottom: 0;
       justify-content: center;
       .search-form {
         position: relative;
@@ -169,6 +171,7 @@
       }
     }
     .header_acoes {
+      padding-bottom: 0;
       @media (max-width: 1087px) {
         justify-content: center;
       }
@@ -226,6 +229,37 @@
             i {
               color: $color-dark-gray;
               font-size: 30px;
+            }
+          }
+      }
+    }
+  }
+  .header_menu {
+    background-color: $color-french;
+      .navbar-menu {
+        .navbar {
+          &:hover .navbar-link {
+            color: $color-fuchsia;
+          }
+          .navbar-item {
+            .navbar-dropdown {
+              border-radius: $radius-4;
+              border-top: none;
+              a {
+                color: $color-dark-gray;
+              }
+            }
+          }
+          .navbar-link {
+            padding-right: 0.8em;
+            color: $branco;
+            font-weight: 500;
+            transition: background-color 0.1s linear;
+            &:hover {
+              color: $color-fuchsia;
+            }
+            &::after {
+              display: none;
             }
           }
       }

@@ -7,7 +7,7 @@
 </style>
 <template>
   <div id="app">
-    <div class="hero container is-fullhd header">
+    <div class="hero header">
       <div class="header_infos">
         <div class="header_infos_social">
             <a class="is-pulled-left facebook"><i class="fab fa-facebook-f has-text-centered"></i></a>
@@ -25,7 +25,7 @@
       </div>
       <div class="columns header_header">
         <div class="column header_logo is-one-fifth is-flex is-vertical-center">
-          <img class="image" src="../src/assets/images/logo.png">
+          <router-link to="/"><img class="image" src="../src/assets/images/logo.png"></router-link>
         </div>
         <div class="column header_pesquisa hero">
           <form class="search-form">
@@ -100,23 +100,45 @@
           </div>
         </div>
       </div>
-      <div class="columns header_menu">
-        <ul>
-          <li><router-link to="/">Inicio</router-link></li>
-          <li><router-link to="/informatica">Informática</router-link></li>
-          <li><router-link to="/computadores">Computadores</router-link></li>
-          <li><router-link to="/notebooks">Notebooks</router-link></li>
-          <li><router-link to="/games">Games</router-link></li>
-          <li><router-link to="/consoles">Consoles</router-link></li>
-          <li><router-link to="/jogos">Jogos</router-link></li>
-          <li><router-link to="/perifericos">Perféricos</router-link></li>
-          <li><router-link to="/mouse">Mouse</router-link></li>
-          <li><router-link to="/teclado">Teclado</router-link></li>
-          <li><router-link to="/fones">Fones</router-link></li>
-          <li><router-link to="/entrar">Entrar</router-link></li>
-          <li><router-link to="/registrar">Registrar</router-link></li>
-          <li><router-link to="/checkout/">Checkout</router-link></li>
-        </ul>
+      <div class="columns header_menu is-hidden-mobile is-vertical-center">
+        <nav class="navbar" role="navigation" aria-label="dropdown navigation">
+          <div class="navbar-menu">
+            <div class="navbar">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Informática
+                </a>
+                <div class="navbar-dropdown">
+                  <router-link class="navbar-item" to="/computadores">Computadores</router-link>
+                  <router-link class="navbar-item" to="/notebooks">Notebooks</router-link>
+                </div>
+              </div>
+            </div>
+            <div class="navbar">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Games
+                </a>
+                <div class="navbar-dropdown is-hoverable">
+                  <router-link class="navbar-item" to="/consoles">Consoles</router-link>
+                  <router-link class="navbar-item" to="/jogos">Jogos</router-link>
+                </div>
+              </div>
+            </div>
+            <div class="navbar">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Periféricos
+                </a>
+                <div class="navbar-dropdown is-hoverable">
+                  <router-link class="navbar-item" to="/mouse">Mouse</router-link>
+                  <router-link class="navbar-item" to="/teclado">Teclado</router-link>
+                  <router-link class="navbar-item" to="/fones">Fones</router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
     <router-view/>

@@ -2,10 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Inicio from '@/components/Inicio';
 import Celulares from '@/components/Celulares';
-import Informatica from '@/components/Informatica';
 import Computadores from '@/components/Computadores';
 import Notebooks from '@/components/Notebooks';
-import Games from '@/components/Games';
 import Consoles from '@/components/Consoles';
 import Jogos from '@/components/Jogos';
 import Perifericos from '@/components/Perifericos';
@@ -36,11 +34,6 @@ export default new Router({
       component: Celulares
     },
     {
-      path: '/informatica/',
-      name: 'Informatica',
-      component: Informatica
-    },
-    {
       path: '/computadores/',
       name: 'Computadores',
       component: Computadores
@@ -49,11 +42,6 @@ export default new Router({
       path: '/notebooks/',
       name: 'Notebooks',
       component: Notebooks
-    },
-    {
-      path: '/games/',
-      name: 'Games',
-      component: Games
     },
     {
       path: '/consoles/',
