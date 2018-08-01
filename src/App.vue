@@ -1,9 +1,6 @@
 <style>
   /*CSS PRINCIPAL*/
   @import "../dist/css/main.min.css";
-  /*Bulma*/
-  @import "../dist/css/vendor/Bulma_v0.7.1/bulma.min.css";
-
 </style>
 <template>
   <div id="app">
@@ -102,7 +99,7 @@
       </div>
       <div class="columns header_menu is-hidden-mobile is-vertical-center">
         <nav class="navbar" role="navigation" aria-label="dropdown navigation">
-          <div class="navbar-menu">
+          <div class="navbar-menu is-vertical-center">
             <div class="navbar">
               <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">

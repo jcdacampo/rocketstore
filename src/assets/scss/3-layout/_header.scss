@@ -236,7 +236,12 @@
   }
   .header_menu {
     background-color: $color-french;
+    height: 50px;
       .navbar-menu {
+        height: 50px;
+        background-color: $color-french;
+        box-shadow: none;
+        margin-top: 1px;
         .navbar {
           &:hover .navbar-link {
             color: $color-fuchsia;
