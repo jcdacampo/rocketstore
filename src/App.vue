@@ -130,12 +130,43 @@
                 <div class="navbar-dropdown is-hoverable">
                   <router-link class="navbar-item" to="/mouse">Mouse</router-link>
                   <router-link class="navbar-item" to="/teclado">Teclado</router-link>
-                  <router-link class="navbar-item" to="/fones">Fones</router-link>
+                  <router-link class="navbar-item" to="/fones">Headsets</router-link>
                 </div>
               </div>
             </div>
           </div>
+
         </nav>
+      </div>
+      <div class="columns menu_mobile is-flex is-hidden-tablet">
+        <div class="column menu_mobile_computador has-text-centered">
+          <i class="fas fa-desktop"></i>
+          <p>Computadores</p>
+        </div>
+        <div class="column menu_mobile_notebook has-text-centered">
+          <i class="fas fa-laptop"></i>
+          <p>Notebooks</p>
+        </div>
+        <div class="column menu_mobile_console has-text-centered">
+          <i class="fas fa-gamepad"></i>
+          <p>Consoles</p>
+        </div>
+        <div class="column menu_mobile_jogo has-text-centered">
+          <i class="fas fa-rocket"></i>
+          <p>Jogos</p>
+        </div>
+        <div class="column menu_mobile_mouse has-text-centered">
+          <i class="fas fa-mouse-pointer"></i>
+          <p>Mouse</p>
+        </div>
+        <div class="column menu_mobile_teclado has-text-centered">
+          <i class="fas fa-keyboard"></i>
+          <p>Teclados</p>
+        </div>
+        <div class="column menu_mobile_fone has-text-centered">
+          <i class="fas fa-headphones"></i>
+          <p>Headsets</p>
+        </div>
       </div>
     </div>
     <router-view/>

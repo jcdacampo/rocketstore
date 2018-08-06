@@ -270,5 +270,20 @@
       }
     }
   }
+  .menu_mobile {
+    .column {
+      background-color: $color-french;
+      border-radius: 50%;
+    }
+    i {
+      font-size: 30px;
+      color: $branco;
+    }
+    p {
+      font-size: 12px;
+      color: $branco;
+    }
+  }
 }
+
 
