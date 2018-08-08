@@ -138,7 +138,7 @@
 
         </nav>
       </div>
-      <div class="columns menu_mobile is-flex is-hidden-tablet">
+      <div class="columns owl-carousel menu_mobile is-flex is-vertical-center is-hidden-tablet">
         <div class="column menu_mobile_computador has-text-centered">
           <i class="fas fa-desktop"></i>
           <p>Computadores</p>
