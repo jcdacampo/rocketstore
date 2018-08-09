@@ -3,6 +3,7 @@ Aqui vai configurações globais, como html, cor de link, img, enfim
  */
 body, button, input, select, textarea{
   font-family: $quick-sand;
+  overflow-x: hidden;
 }
 
 .is-vertical-center {

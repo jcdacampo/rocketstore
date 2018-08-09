@@ -1,5 +1,8 @@
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
+  /**
+   * Carousel principal
+   */
+  $('.menu_mobile').owlCarousel({
     responsiveClass: true,
     responsive: {
       0:{
