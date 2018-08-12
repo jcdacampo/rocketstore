@@ -1,6 +1,6 @@
 $(document).ready(function () {
   /**
-   * Carousel principal
+   * Carousel menu mobile
    */
   $('.menu_mobile').owlCarousel({
     responsiveClass: true,
@@ -21,5 +21,17 @@ $(document).ready(function () {
         items: 7
       }
     }
+  });
+
+  /**
+   * Carousel vitrine
+   */
+  $('.slider_carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    dots: false,
+    autoPlay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true
   });
 });

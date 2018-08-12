@@ -1,8 +1,16 @@
 <template>
   <section class="section slider">
-    <div class="container">
-      <div class="slider_carousel">
-        <img src="https://29028l.ha.azioncdn.net/img/2018/08/banner/120199/samsung-galaxy-j5-pro.png?ims=fit-in/800x">
+    <div class="container is-fluid is-marginless">
+      <div class="owl-carousel slider_carousel">
+        <div>
+          <img class="image is-12" src="http://via.placeholder.com/1350x350">
+        </div>
+        <div>
+          <img class="image is-12" src="http://via.placeholder.com/1350x350">
+        </div>
+        <div>
+          <img class="image is-12" src="http://via.placeholder.com/1350x350">
+        </div>
       </div>
     </div>
   </section>

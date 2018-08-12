@@ -22,3 +22,7 @@ body, button, input, select, textarea{
 .columns > .column:last-child {
   padding-right: 0 !important;
 }
+
+.is-marginless {
+  margin: 0;
+}
