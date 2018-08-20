@@ -34,4 +34,15 @@ $(document).ready(function () {
     autoplayTimeout: 2000,
     autoplayHoverPause: true
   });
+
+  /**
+   * Carousel marcas
+   */
+  $('.marcas').owlCarousel({
+    items: 4,
+    loop: true,
+    autoPlay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true
+  });
 });

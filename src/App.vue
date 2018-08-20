@@ -22,7 +22,7 @@
       </div>
       <div class="columns header_header">
         <div class="column header_logo is-one-fifth is-flex is-vertical-center">
-          <router-link to="/"><img class="image" src="../src/assets/images/logo.png"></router-link>
+          <router-link to="/"><img class="image" src="../static/images/logo.png"></router-link>
         </div>
         <div class="column header_pesquisa hero">
           <form class="search-form">

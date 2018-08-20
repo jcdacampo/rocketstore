@@ -15,7 +15,7 @@
         </div>
       </div>
     </section>
-    <div class="container">
+    <div class="container is-fullhd">
       <section class="columns is-multiline is-mobile descontos">
         <div class="column is-half-mobile is-paddingless desconto_primeiro">
           <img src="http://via.placeholder.com/200x140">
@@ -56,34 +56,71 @@
           <img src="http://via.placeholder.com/180x140">
         </div>
       </section>
-      <section class="columns is-multiline is-mobile produtos_ate">
-        <div class="column has-text-centered">
+      <section class="columns is-mobile is-multiline produtos_ate">
+        <div class="column is-3-desktop is-6-mobile has-text-centered">
           <div class="produtos_ate_box">
             <span class="produtos_ate_box_desc">Produtos</span>
             <p>por até</p>
             <b>R$ 59,90</b>
           </div>
         </div>
-        <div class="column has-text-centered">
+        <div class="column is-3-desktop is-6-mobile has-text-centered">
           <div class="produtos_ate_box">
             <span class="produtos_ate_box_desc">Produtos</span>
             <p>por até</p>
             <b>R$ 99,90</b>
           </div>
         </div>
-        <div class="column has-text-centered">
+        <div class="column is-3-desktop is-6-mobile has-text-centered">
           <div class="produtos_ate_box">
             <span class="produtos_ate_box_desc">Produtos</span>
             <p>por até</p>
             <b>R$ 159,90</b>
           </div>
         </div>
-        <div class="column has-text-centered">
+        <div class="column is-3-desktop is-6-mobile has-text-centered">
           <div class="produtos_ate_box">
             <span class="produtos_ate_box_desc">Produtos</span>
             <p>por até</p>
             <b>R$ 259,90</b>
           </div>
+        </div>
+      </section>
+      <section class="columns is-multiline sugestoes is-vertical-center">
+        <div class="column sugestoes_desc is-2-desktop is-12-mobile has-text-centered is-vertical-center">
+          <span><b>Sugestões</b> para você </span>
+        </div>
+        <div class="column sugestoes_img is-3-desktop is-3-mobile is-vertical-center">
+          <img src="http://via.placeholder.com/180x140">
+        </div>
+        <div class="column sugestoes_img is-3-desktop is-3-mobile is-vertical-center">
+          <img src="http://via.placeholder.com/180x140">
+        </div>
+        <div class="column sugestoes_img is-3-desktop is-3-mobile is-vertical-center">
+          <img src="http://via.placeholder.com/180x140">
+        </div>
+      </section>
+      <section class="columns is-multiline owl-carousel marcas">
+        <div class="column is-3-desktop is-6-mobile">
+          <img src="../../static/images/intel.png">
+        </div>
+        <div class="column is-3-desktop is-6-mobile">
+          <img src="../../static/images/razer.png">
+        </div>
+        <div class="column is-3-desktop is-6-mobile">
+          <img src="../../static/images/apple.png">
+        </div>
+        <div class="column is-3-desktop is-6-mobile">
+          <img src="../../static/images/cm.png">
+        </div>
+        <div class="column is-3-desktop is-6-mobile">
+          <img src="../../static/images/cm.png">
+        </div>
+        <div class="column is-3-desktop is-6-mobile">
+          <img src="../../static/images/cm.png">
+        </div>
+        <div class="column is-3-desktop is-6-mobile">
+          <img src="../../static/images/cm.png">
         </div>
       </section>
     </div>
