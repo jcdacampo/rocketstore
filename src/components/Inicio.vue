@@ -114,13 +114,13 @@
           <img src="../../static/images/cm.png">
         </div>
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/cm.png">
+          <img src="../../static/images/sony.png">
         </div>
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/cm.png">
+          <img src="../../static/images/samsung.png">
         </div>
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/cm.png">
+          <img src="../../static/images/hyperx.png">
         </div>
       </section>
     </div>

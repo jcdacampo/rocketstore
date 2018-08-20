@@ -41,8 +41,19 @@ $(document).ready(function () {
   $('.marcas').owlCarousel({
     items: 4,
     loop: true,
-    autoPlay: true,
-    autoplayTimeout: 4000,
-    autoplayHoverPause: true
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      340:{
+        items: 3
+      },
+      440:{
+        items: 4
+      }
+    }
   });
 });
