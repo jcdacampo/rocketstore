@@ -102,26 +102,29 @@
       </section>
       <section class="columns is-multiline owl-carousel marcas">
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/intel.png">
+          <img src="/static/images/intel.png">
         </div>
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/razer.png">
+          <img src="/static/images/razer.png">
         </div>
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/apple.png">
+          <img src="/static/images/apple.png">
         </div>
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/cm.png">
+          <img src="/static/images/cm.png">
         </div>
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/sony.png">
+          <img src="/static/images/sony.png">
         </div>
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/samsung.png">
+          <img src="/static/images/samsung.png">
         </div>
         <div class="column is-3-desktop is-6-mobile">
-          <img src="../../static/images/hyperx.png">
+          <img src="/static/images/hyperx.png">
         </div>
+      </section>
+      <section class="lancamento">
+
       </section>
     </div>
   </div>
