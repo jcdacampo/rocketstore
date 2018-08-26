@@ -8,12 +8,13 @@
   }
   .column {
     max-width: 200px;
-    min-height: 170px;
+    min-height: 130px;
+    border-radius: 50%;
     margin-top: -10px;
     z-index: 1;
     flex: none;
-    border: 2px solid $color-french;
-    border-radius: $radius-4;
+    background-color: $color-french;
+    border: 2px solid $branco;
     margin-bottom: 20px;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -38,6 +39,7 @@
       height: 30px;
       margin-top: -6px;
       background-color: $color-french;
+      border-radius: $radius-4;
       color: $branco;
       font-weight: bold;
     }
@@ -127,6 +129,80 @@
       &:hover {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
+      }
+    }
+  }
+}
+.lancamento {
+  .lancamento_titulo {
+    font-size: 30px;
+    color: $color-dark-gray;
+    font-weight: bold;
+    padding-bottom: 35px;
+  }
+  .lancamento_desc {
+    h2 {
+      color: $color-dark-gray;
+      font-size: 24px;
+    }
+    span {
+      color: $color-light-gray;
+    }
+    .lancamento_desc_caracteristicas {
+      padding-top: 25px;
+      .column {
+        display: flex;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        &:hover i {
+          background-color: $color-french;
+        }
+        &:hover .lancamento_desc_caracteristicas_texto {
+          color: $color-french;
+        }
+        &:hover {
+          cursor: default;
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+        i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          padding: 5px;
+          border-radius: $radius-4;
+          width: 50px;
+          color: $branco;
+          background-color: $color-dark-gray;
+        }
+      }
+      .lancamento_desc_caracteristicas_texto {
+        color: $color-dark-gray;
+        padding-left: 5px;
+      }
+    }
+    .lancamento_desc_acoes {
+      height: 80px;
+      align-items: center;
+      padding-top: 10px;
+      .lancamento_desc_acoes_preco {
+        font-size: 28px;
+        color: $color-dark-gray;
+        p {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+      .lancamento_desc_acoes_botao {
+        .button {
+          background-color: $color-fuchsia;
+          color: $branco;
+          border: none;
+          font-size: 22px;
+        }
       }
     }
   }

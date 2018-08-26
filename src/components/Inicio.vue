@@ -4,13 +4,16 @@
       <div class="container is-fluid is-marginless">
         <div class="owl-carousel slider_carousel">
           <div>
-            <img class="image is-12" src="http://via.placeholder.com/1350x350">
+            <img class="image is-12" src="/static/images/banner-01.jpg">
           </div>
           <div>
-            <img class="image is-12" src="http://via.placeholder.com/1350x350">
+            <img class="image is-12" src="/static/images/banner-02.jpg">
           </div>
           <div>
-            <img class="image is-12" src="http://via.placeholder.com/1350x350">
+            <img class="image is-12" src="/static/images/banner-03.jpg">
+          </div>
+          <div>
+            <img class="image is-12" src="/static/images/banner-04.jpg">
           </div>
         </div>
       </div>
@@ -18,25 +21,25 @@
     <div class="container is-fullhd">
       <section class="columns is-multiline is-mobile descontos">
         <div class="column is-half-mobile is-paddingless desconto_primeiro">
-          <img src="http://via.placeholder.com/200x140">
+          <img src="/static/images/desconto-01.png">
           <div class="desconto_desc is-vertical-center has-text-centered">
             <span>Descontos 10%</span>
           </div>
         </div>
         <div class="column is-half-mobile is-paddingless desconto_segundo">
-          <img src="http://via.placeholder.com/200x140">
+          <img src="/static/images/desconto-02.png">
           <div class="desconto_desc is-vertical-center has-text-centered">
             <span>Descontos 30%</span>
           </div>
         </div>
         <div class="column is-full-mobile is-paddingless desconto_terceiro">
-          <img src="http://via.placeholder.com/200x140">
+          <img src="/static/images/desconto-03.png">
           <div class="desconto_desc is-vertical-center has-text-centered">
             <span>Descontos 20%</span>
           </div>
         </div>
         <div class="column is-full-mobile is-paddingless desconto_quarto">
-          <img src="http://via.placeholder.com/200x140">
+          <img src="/static/images/desconto-04.png">
           <div class="desconto_desc is-vertical-center has-text-centered">
             <span>Descontos 50%</span>
           </div>
@@ -123,8 +126,88 @@
           <img src="/static/images/hyperx.png">
         </div>
       </section>
-      <section class="lancamento">
-
+      <section class="lancamento ">
+        <h1 class="lancamento_titulo has-text-centered">Último lançamento</h1>
+        <div class="columns is-multiline">
+          <div class="column lancamento_imagem is-offset-1-desktop is-4-desktop is-12-mobile">
+            <img src="/static/images/iphone.jpg">
+          </div>
+          <div class="column lancamento_desc is-6-desktop is-12-mobile">
+            <h2>iPhone X</h2>
+            <span>
+              O Apple iPhone X é um smartphone iOS com características inovadoras que o tornam uma excelente opção para qualquer tipo de utilização.
+            </span>
+            <div class="lancamento_desc_caracteristicas">
+              <div class="columns is-multiline">
+                <div class="column is-paddingless-left is-3-desktop">
+                  <i class="fas fa-broadcast-tower"></i>
+                  <div class="lancamento_desc_caracteristicas_texto">
+                    <p>Rede</p>
+                    <b>LTE 4G</b>
+                  </div>
+                </div>
+                <div class="column is-3-desktop">
+                  <i class="fas fa-microchip"></i>
+                  <div class="lancamento_desc_caracteristicas_texto">
+                    <p>6 Core</p>
+                    <b>2.1 GHZ</b>
+                  </div>
+                </div>
+                <div class="column is-3-desktop">
+                  <i class="fas fa-memory"></i>
+                  <div class="lancamento_desc_caracteristicas_texto">
+                    <p>Memória</p>
+                    <b>256 GB</b>
+                  </div>
+                </div>
+                <div class="column is-3-desktop">
+                  <i class="fas fa-tint"></i>
+                  <div class="lancamento_desc_caracteristicas_texto">
+                    <p>Resistência</p>
+                    <b>Sim</b>
+                  </div>
+                </div>
+                <div class="column is-paddingless-left is-3-desktop">
+                  <i class="fab fa-apple"></i>
+                  <div class="lancamento_desc_caracteristicas_texto">
+                    <p>Apple</p>
+                    <b>iOS 11</b>
+                  </div>
+                </div>
+                <div class="column is-3-desktop">
+                  <i class="fas fa-mobile"></i>
+                  <div class="lancamento_desc_caracteristicas_texto">
+                    <p>Display 5.8</p>
+                    <b>2436x1125</b>
+                  </div>
+                </div>
+                <div class="column is-3-desktop">
+                  <i class="fas fa-camera"></i>
+                  <div class="lancamento_desc_caracteristicas_texto">
+                    <p>Foto</p>
+                    <b>12 mpx</b>
+                  </div>
+                </div>
+                <div class="column is-3-desktop">
+                  <i class="fas fa-video"></i>
+                  <div class="lancamento_desc_caracteristicas_texto">
+                    <p>Video</p>
+                    <b>4K</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lancamento_desc_acoes is-flex is-space-around">
+              <div class="lancamento_desc_acoes_preco">
+                <p>Apenas</p>
+                R$ 4999,00
+              </div>
+              <div class="lancamento_desc_acoes_botao">
+                <a class="button is-hovered">Eu quero!</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </div>

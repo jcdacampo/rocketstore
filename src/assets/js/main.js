@@ -29,10 +29,10 @@ $(document).ready(function () {
   $('.slider_carousel').owlCarousel({
     items: 1,
     loop: true,
+    autoplay:true,
     dots: false,
-    autoPlay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
   });
 
   /**
@@ -42,6 +42,7 @@ $(document).ready(function () {
     items: 4,
     loop: true,
     autoplay:true,
+    dots: false,
     autoplayTimeout:2000,
     autoplayHoverPause:true,
     responsive: {
