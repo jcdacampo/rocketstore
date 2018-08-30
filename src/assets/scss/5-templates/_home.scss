@@ -13,7 +13,7 @@
     margin-top: -10px;
     z-index: 1;
     flex: none;
-    background-color: $color-french;
+    background-image: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
     border: 2px solid $branco;
     margin-bottom: 20px;
     -webkit-transform: scale(1);
@@ -38,9 +38,10 @@
       width: 100%;
       height: 30px;
       margin-top: -6px;
-      background-color: $color-french;
+      background-color: $branco;
       border-radius: $radius-4;
-      color: $branco;
+      border: 1px solid $color-french;
+      color: $color-french;
       font-weight: bold;
     }
   }
@@ -156,6 +157,18 @@
         transform: scale(1);
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
+        i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          padding: 5px;
+          border-radius: $radius-4;
+          min-width: 50px;
+          max-height: 50px;
+          color: $branco;
+          background-color: $color-dark-gray;
+        }
         &:hover i {
           background-color: $color-french;
         }
@@ -166,17 +179,6 @@
           cursor: default;
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
-        }
-        i {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 30px;
-          padding: 5px;
-          border-radius: $radius-4;
-          width: 50px;
-          color: $branco;
-          background-color: $color-dark-gray;
         }
       }
       .lancamento_desc_caracteristicas_texto {

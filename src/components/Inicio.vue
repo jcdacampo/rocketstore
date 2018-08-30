@@ -10,9 +10,6 @@
             <img class="image is-12" src="/static/images/banner-02.jpg">
           </div>
           <div>
-            <img class="image is-12" src="/static/images/banner-03.jpg">
-          </div>
-          <div>
             <img class="image is-12" src="/static/images/banner-04.jpg">
           </div>
         </div>
@@ -138,57 +135,57 @@
               O Apple iPhone X é um smartphone iOS com características inovadoras que o tornam uma excelente opção para qualquer tipo de utilização.
             </span>
             <div class="lancamento_desc_caracteristicas">
-              <div class="columns is-multiline">
-                <div class="column is-paddingless-left is-3-desktop">
+              <div class="columns is-mobile is-multiline">
+                <div class="column is-3-desktop is-6-tablet is-6-mobile">
                   <i class="fas fa-broadcast-tower"></i>
                   <div class="lancamento_desc_caracteristicas_texto">
                     <p>Rede</p>
                     <b>LTE 4G</b>
                   </div>
                 </div>
-                <div class="column is-3-desktop">
+                <div class="column is-3-desktop is-6-tablet is-6-mobile">
                   <i class="fas fa-microchip"></i>
                   <div class="lancamento_desc_caracteristicas_texto">
                     <p>6 Core</p>
                     <b>2.1 GHZ</b>
                   </div>
                 </div>
-                <div class="column is-3-desktop">
+                <div class="column is-3-desktop is-6-tablet is-6-mobile">
                   <i class="fas fa-memory"></i>
                   <div class="lancamento_desc_caracteristicas_texto">
                     <p>Memória</p>
                     <b>256 GB</b>
                   </div>
                 </div>
-                <div class="column is-3-desktop">
+                <div class="column is-3-desktop is-6-tablet is-6-mobile">
                   <i class="fas fa-tint"></i>
                   <div class="lancamento_desc_caracteristicas_texto">
                     <p>Resistência</p>
                     <b>Sim</b>
                   </div>
                 </div>
-                <div class="column is-paddingless-left is-3-desktop">
+                <div class="column is-3-desktop is-6-tablet is-6-mobile">
                   <i class="fab fa-apple"></i>
                   <div class="lancamento_desc_caracteristicas_texto">
                     <p>Apple</p>
                     <b>iOS 11</b>
                   </div>
                 </div>
-                <div class="column is-3-desktop">
+                <div class="column is-3-desktop is-6-tablet is-6-mobile">
                   <i class="fas fa-mobile"></i>
                   <div class="lancamento_desc_caracteristicas_texto">
-                    <p>Display 5.8</p>
-                    <b>2436x1125</b>
+                    <p>Display</p>
+                    <b>5.8</b>
                   </div>
                 </div>
-                <div class="column is-3-desktop">
+                <div class="column is-3-desktop is-6-tablet is-6-mobile">
                   <i class="fas fa-camera"></i>
                   <div class="lancamento_desc_caracteristicas_texto">
                     <p>Foto</p>
                     <b>12 mpx</b>
                   </div>
                 </div>
-                <div class="column is-3-desktop">
+                <div class="column is-3-desktop is-6-tablet is-6-mobile">
                   <i class="fas fa-video"></i>
                   <div class="lancamento_desc_caracteristicas_texto">
                     <p>Video</p>
