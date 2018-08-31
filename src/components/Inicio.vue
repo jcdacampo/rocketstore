@@ -126,8 +126,17 @@
       <section class="lancamento ">
         <h1 class="lancamento_titulo has-text-centered">Último lançamento</h1>
         <div class="columns is-multiline">
-          <div class="column lancamento_imagem is-offset-1-desktop is-4-desktop is-12-mobile">
+          <div class="column image lancamento_imagem is-offset-1-desktop is-4-desktop is-12-mobile">
             <img src="/static/images/iphone.jpg">
+            <div class="lancamento_imagem_acoes">
+              <div class="lancamento_imagem_acoes_preco has-text-centered">
+                <p>Apenas</p>
+                R$ 4999,00
+              </div>
+              <div class="lancamento_imagem_acoes_botao has-text-centered">
+                <a class="button is-hovered">Eu quero!</a>
+              </div>
+            </div>
           </div>
           <div class="column lancamento_desc is-6-desktop is-12-mobile">
             <h2>iPhone X</h2>
@@ -194,17 +203,20 @@
                 </div>
               </div>
             </div>
-            <div class="lancamento_desc_acoes is-flex is-space-around">
-              <div class="lancamento_desc_acoes_preco">
+            <div class="lancamento_desc_acoes is-flex">
+              <div class="lancamento_desc_acoes_preco has-text-centered">
                 <p>Apenas</p>
                 R$ 4999,00
               </div>
-              <div class="lancamento_desc_acoes_botao">
+              <div class="lancamento_desc_acoes_botao has-text-centered">
                 <a class="button is-hovered">Eu quero!</a>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section class="features is-fullhd">
+
       </section>
     </div>
   </div>
