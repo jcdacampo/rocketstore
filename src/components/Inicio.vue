@@ -215,8 +215,35 @@
           </div>
         </div>
       </section>
-      <section class="features is-fullhd">
-
+      <section class="features is-flex is-vertical-center is-fullhd">
+        <div class="feature_frete">
+          <i class="fas fa-truck"></i>
+          <p>Entrega rápida</p>
+        </div>
+        <div class="feature_promo">
+          <i class="fas fa-star"></i>
+          <p>Promoções</p>
+        </div>
+        <div class="feature_atendimento">
+          <i class="fas fa-headset"></i>
+          <p>Atendimento 24/7</p>
+        </div>
+        <div class="feature_qualidade">
+          <i class="fas fa-medal"></i>
+          <p>Qualidade</p>
+        </div>
+        <div class="feature_parcelas">
+          <span><b>10x</b></span>
+          <p>sem juros</p>
+        </div>
+        <div class="feature_seguranca">
+          <i class="fas fa-lock"></i>
+          <p>Segurança</p>
+        </div>
+        <div class="feature_gameficacao">
+          <i class="fas fa-trophy"></i>
+          <p>Prêmios</p>
+        </div>
       </section>
     </div>
   </div>

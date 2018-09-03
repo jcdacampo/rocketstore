@@ -264,6 +264,31 @@
   }
 }
 .features {
-  height: 70px;
+  min-height: 70px;
   background-color: $color-french;
+  justify-content: space-around;
+  color: $branco;
+  text-align: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 771px) and (min-width: 769px) {
+    margin-top: 10px;
+  }
+  p {
+    font-size: 12px;
+  }
+  i, span {
+    font-size: 28px;
+  }
+  .feature_parcelas {
+    p {
+      margin-bottom: 6px;
+      margin-top: -7px;
+    }
+  }
+  .feature_frete, .feature_promo, .feature_atendimento {
+    @media (max-width: 540px) {
+      width: 33.33%;
+      padding-top: 10px;
+    }
+  }
 }
