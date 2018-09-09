@@ -1,0 +1,81 @@
+.newsletter  {
+  min-height: 70px;
+  background-color: $color-fuchsia;
+  margin-top: 35px;
+  input {
+    @media screen and (min-width: 530px) and (max-width: 1023px) {
+      width: 60%;
+    }
+  }
+  .column {
+    @media (max-width: 1023px) {
+      flex: none;
+      width: 100%;
+    }
+  }
+  .newsletter_desc {
+    color: $branco;
+    span {
+      font-size: 22px;
+      padding-left: 10px;
+    }
+    i {
+      font-size: 24px;
+    }
+  }
+  .newsletter_inscrever {
+    button {
+      color: $color-dark-gray;
+    }
+  }
+}
+.rodape {
+  background-color: $color-dark-gray;
+  color: $branco;
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 14px;
+  }
+  hr {
+    width: 25%;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  .columns {
+    @media (max-width: 768px) {
+      text-align: center;
+      hr {
+        display: none;
+      }
+    }
+  }
+  .rodape_pagamento, .rodape_seguranca {
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+    img {
+      width: 40px;
+      margin: 0 5px;
+      &:first-child {
+        margin-left: 10px;
+      }
+    }
+  }
+
+
+  .rodape_atendimento {
+    i {
+      font-size: 18px;
+    }
+  }
+  .rodape_copyright {
+    background-color: $branco;
+    color: $color-dark-gray;
+    font-size: 12px;
+  }
+}

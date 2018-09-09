@@ -170,6 +170,77 @@
       </div>
     </div>
     <router-view/>
+    <section class="newsletter columns is-multiline is-tablet">
+      <div class="column is-12-mobile is-4-desktop has-text-centered is-vertical-center newsletter_desc">
+        <i class="far fa-envelope"></i>
+        <span>Receba ofertas exclusivas!</span>
+      </div>
+      <div class="column is-12-mobile is-3-desktop is-vertical-center control newsletter_nome">
+        <input class="input" type="text" placeholder="Digite seu nome">
+      </div>
+      <div class="column is-12-mobile is-3-desktop is-vertical-center control newsletter_email">
+        <input class="input" type="text" placeholder="Digite seu e-mail">
+      </div>
+      <div class="column is-12-mobile is-2-desktop is-vertical-center newsletter_inscrever">
+        <button class="button">Inscrever-se</button>
+      </div>
+    </section>
+    <footer class="rodape">
+      <div class="columns">
+        <div class="column rodape_institucional">
+          <h4>Institucional</h4>
+          <hr>
+          <p class="rodape_institucional_empresa">Quem somos</p>
+          <p class="rodape_institucional_politica">Política de privacidade</p>
+          <p class="rodape_institucional_mapa">Mapa do site</p>
+          <p class="rodape_institucional_avaliacoes">Avaliações</p>
+        </div>
+        <div class="column rodape_ajuda">
+          <h4>Ajuda</h4>
+          <hr>
+          <p class="rodape_ajuda_como-comprar">Como comprar?</p>
+          <p class="rodape_ajuda_trocas">Trocas e devoluções</p>
+          <p class="rodape_ajuda_entrega">Pedidos e entrega</p>
+        </div>
+        <div class="column rodape_atendimento">
+          <h4>Atendimento</h4>
+          <hr>
+          <p class="rodape_atendimento_chamado">Abrir um chamado</p>
+          <p class="rodape_atendimento_facebook">Chamar no <i class="fab fa-facebook-square"></i></p>
+          <p class="rodape_atendimento_twitter">Chamar no <i class="fab fa-twitter-square"></i></p>
+        </div>
+        <div class="column rodape_conta">
+          <h4>Minha conta</h4>
+          <hr>
+          <p class="rodape_conta_dados">Meus dados</p>
+          <p class="rodape_conta_pedidos">Meus pedidos</p>
+          <p class="rodape_conta_favs">Favoritos</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column rodape_pagamento">
+          <span>Formas de pagamento</span>
+          <div>
+            <img src="/static/images/pagamento01.png">
+            <img src="/static/images/pagamento02.png">
+            <img src="/static/images/pagamento03.png">
+            <img src="/static/images/pagamento04.png">
+            <img src="/static/images/pagamento05.png">
+          </div>
+        </div>
+        <div class="column rodape_seguranca">
+          <span>Segurança</span>
+          <div>
+            <img src="/static/images/seguranca01.png">
+            <img src="/static/images/seguranca02.png">
+            <img src="/static/images/seguranca03.png">
+          </div>
+        </div>
+      </div>
+      <div class="rodape_copyright is-fullhd has-text-centered">
+        Rocketstore Copyright © 2018 Todos os direitos reservados.
+      </div>
+    </footer>
   </div>
 </template>
 

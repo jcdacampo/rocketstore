@@ -57,4 +57,23 @@ $(document).ready(function () {
       }
     }
   });
+
+  /**
+   * Seleção de tendencias
+   * (da pra simplificar com o vue)
+   */
+   //Ao clicar no botao + vistos
+  $('.tendencias_botoes_vistos').click(function () {
+    $('.tendencias_botoes_vendidos').removeClass('selected');
+    $('.tendencias_botoes_vistos').addClass('selected');
+    $('.tendencias_box_vistos').removeClass('is-hidden');
+    $('.tendencias_box_vendidos').addClass('is-hidden');
+  });
+  //Ao clicar no botao + vendidos
+   $('.tendencias_botoes_vendidos').click(function () {
+    $('.tendencias_botoes_vistos').removeClass('selected');
+    $('.tendencias_botoes_vendidos').addClass('selected');
+    $('.tendencias_box_vendidos').removeClass('is-hidden');
+    $('.tendencias_box_vistos').addClass('is-hidden');
+  });
 });

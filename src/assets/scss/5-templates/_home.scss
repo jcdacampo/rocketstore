@@ -292,3 +292,59 @@
     }
   }
 }
+.tendencias {
+  .tendencias_titulo {
+    font-size: 30px;
+    color: $color-dark-gray;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+  .tendencias_botoes {
+    .button {
+      font-size: 18px;
+      border: 1px solid $color-light-gray;
+    }
+    .selected {
+      background-color: $color-light-gray;
+      color: $branco;
+    }
+  }
+  .tendencias_box {
+    padding-top: 35px;
+    .tendencias_box_vistos {
+      margin-bottom: 12px;
+    }
+    .tendencia_box_produto {
+      &:hover {
+
+      }
+      @media (max-width: 420px) {
+        width: 100%;
+      }
+      .tendencia_box_produto_image {
+        .image {
+          max-width: 150px;
+          margin: auto;
+        }
+      }
+      .tendencia_box_produto_desc {
+        color: $color-dark-gray;
+        .nome {
+          min-height: 75px;
+        }
+        .preco-antigo {
+          font-size: 14px;
+          color: #999;
+        }
+        .preco-real {
+          font-size: 26px;
+        }
+        .button {
+          width: 90%;
+          background-color: $color-french;
+          color: $branco;
+        }
+      }
+    }
+  }
+}
