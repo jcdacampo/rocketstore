@@ -1,0 +1,36 @@
+.container {
+  .breadcrumb{
+    a {
+      font-size: 14px;
+      padding: 0 .25em;
+      color: $color-dark-gray;
+    }
+    .is-active {
+      a {
+        color: $color-fuchsia;
+      }
+    }
+  }
+  .produto {
+    .produto_imagem {
+      .produto_imagem_miniaturas {
+        display: flex;
+        flex-direction: column;
+        .imagem {
+          width: 120px;
+          border: 1px solid $color-french;
+          border-radius: $radius-4;
+          margin-top: 5px;
+        }
+        .active {
+          border: 2px solid $color-french;
+        }
+      }
+      .produto_imagem_principal {
+        .imagem.principal {
+
+        }
+      }
+    }
+  }
+}

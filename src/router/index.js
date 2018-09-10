@@ -15,6 +15,7 @@ import Registrar from '@/components/Registrar';
 import Minha_Conta from '@/components/MinhaConta';
 import Carrinho from '@/components/Carrinho';
 import Checkout from '@/components/Checkout';
+import Produto from '@/components/Produto';
 
 Vue.use(Router);
 /**
@@ -97,6 +98,11 @@ export default new Router({
       path: '/checkout/',
       name: 'Finalizar Compra',
       component: Checkout
+    },
+    {
+      path: '/produto/',
+      name: 'Produto',
+      component: Produto
     },
   ]
 })

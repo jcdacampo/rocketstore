@@ -209,7 +209,9 @@
                 R$ 4999,00
               </div>
               <div class="lancamento_desc_acoes_botao has-text-centered">
-                <a class="button is-hovered">Eu quero!</a>
+                <router-link class="button is-hovered" to="/produto">
+                  Eu quero!
+                </router-link>
               </div>
             </div>
           </div>

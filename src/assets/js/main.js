@@ -76,4 +76,10 @@ $(document).ready(function () {
     $('.tendencias_box_vendidos').removeClass('is-hidden');
     $('.tendencias_box_vistos').addClass('is-hidden');
   });
+
+  /**
+   * Zoom imagem produto
+   */
+  $("#zoom_image").elevateZoom();
 });
+
