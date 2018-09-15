@@ -31,3 +31,15 @@ body, button, input, select, textarea{
 .is-space-around {
   justify-content: space-around;
 }
+
+.is-space-between {
+  justify-content: space-between;
+}
+
+.select select:focus,
+.select select.is-focused,
+.select select:active,
+.select select.is-active,
+.select:not(.is-multiple):not(.is-loading)::after{
+  border-color: $color-french !important;
+}

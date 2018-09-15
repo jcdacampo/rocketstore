@@ -1,36 +1,123 @@
 .container {
-  .breadcrumb{
-    a {
-      font-size: 14px;
-      padding: 0 .25em;
-      color: $color-dark-gray;
-    }
-    .is-active {
-      a {
-        color: $color-fuchsia;
-      }
-    }
-  }
-  .produto {
-    .produto_imagem {
-      .produto_imagem_miniaturas {
-        display: flex;
-        flex-direction: column;
-        .imagem {
-          width: 120px;
-          border: 1px solid $color-french;
-          border-radius: $radius-4;
-          margin-top: 5px;
-        }
-        .active {
-          border: 2px solid $color-french;
-        }
-      }
-      .produto_imagem_principal {
-        .imagem.principal {
+   .breadcrumb{
+     a {
+       font-size: 14px;
+       padding: 0 .25em;
+       color: $color-dark-gray;
+     }
+     .is-active {
+       a {
+         color: $color-fuchsia;
+       }
+     }
+   }
+   .produto {
+     .produto_imagem {
+       .produto_imagem_miniaturas {
+         display: flex;
+         flex-direction: column;
+         .imagem {
+           width: 120px;
+           border: 1px solid $color-french;
+           border-radius: $radius-4;
+           margin-top: 5px;
+         }
+         .active {
+           border: 2px solid $color-french;
+         }
+       }
+       .produto_imagem_principal {
+         .imagem.principal {
 
+         }
+         .button {
+           background-color: $color-light-gray;
+           color: $branco;
+           font-size: 13px;
+           &:hover {
+             background-color: $color-dark-gray;
+           }
+           i {
+             padding-right: 5px;
+           }
+         }
+       }
+     }
+     .produto_desc {
+       .produto_desc_titulo {
+         justify-content: space-between;
+         align-items: baseline;
+         h1 {
+           font-size: 34px;
+           color: $color-dark-gray;
+         }
+         .produto_desc_titulo_avaliacao{
+           color: yellow;
+           font-size: 12px;
+           :last-child {
+             color: $color-light-gray;
+           }
+         }
+       }
+       hr {
+         margin: 10px 0;
+         background-color: #e1e1e1;
+       }
+       .produto_desc_preco {
+         .produto_desc_preco_antigo {
+           color: #b5b5b5;
+         }
+         .produto_desc_preco_porcentagem {
+           background-color: #11C319;
+           color: white;
+           padding: 7px;
+           border-radius: 4px;
+         }
+         .produto_desc_preco_atual_boleto {
+           color: $color-light-gray;
+           padding-bottom: 25px;
+           span {
+             font-size: 32px;
+             color: $verde;
+           }
+           i {
+             font-size: 20px;
+           }
+         }
+         .produto_desc_preco_atual_cartao_prazo {
+           color: $color-light-gray;
+           span {
+             font-size: 20px;
+             color: $color-french;
+           }
+         }
+         .produto_desc_preco_atual_cartao_prazo_uma {
+           color: $color-light-gray;
+           span {
+             font-size: 16px;
+             color: $color-french;
+           }
+           a {
+             text-decoration: underline;
+             color: $color-french;
+             font-size: 14px;
+           }
+         }
+       }
+       .produto_desc_acoes {
+        .produto_desc_acoes_cor {
+          color: $color-light-gray;
+          div {
+            width: 50px;
+            height: 50px;
+            background-color: #26252b;
+            border-radius: $radius-4;
+            &:hover {
+              cursor: pointer;
+            }
+          }
         }
-      }
-    }
-  }
-}
+       }
+     }
+   }
+ }
