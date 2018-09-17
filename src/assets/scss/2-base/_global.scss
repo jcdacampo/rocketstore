@@ -41,5 +41,22 @@ body, button, input, select, textarea{
 .select select:active,
 .select select.is-active,
 .select:not(.is-multiple):not(.is-loading)::after{
-  border-color: $color-french !important;
+  border-color: $color-dark-gray !important;
+}
+
+.control.has-icons-left .input:focus ~ .icon,
+.control.has-icons-left .select:focus ~ .icon,
+.control.has-icons-right .input:focus ~ .icon,
+.control.has-icons-right .select:focus ~ .icon {
+  color: $color-dark-gray !important;
+}
+
+.is-flex-column {
+  flex-direction: column;
+}
+
+.is-active {
+  a {
+    color: $color-fuchsia !important;
+  }
 }

@@ -1,115 +1,155 @@
 .container {
-   .breadcrumb{
-     a {
-       font-size: 14px;
-       padding: 0 .25em;
-       color: $color-dark-gray;
-     }
-     .is-active {
-       a {
-         color: $color-fuchsia;
-       }
-     }
-   }
-   .produto {
-     .produto_imagem {
-       .produto_imagem_miniaturas {
-         display: flex;
-         flex-direction: column;
-         .imagem {
-           width: 120px;
-           border: 1px solid $color-french;
-           border-radius: $radius-4;
-           margin-top: 5px;
-         }
-         .active {
-           border: 2px solid $color-french;
-         }
-       }
-       .produto_imagem_principal {
-         .imagem.principal {
-
-         }
-         .button {
-           background-color: $color-light-gray;
-           color: $branco;
-           font-size: 13px;
-           &:hover {
-             background-color: $color-dark-gray;
-           }
-           i {
-             padding-right: 5px;
-           }
-         }
-       }
-     }
-     .produto_desc {
-       .produto_desc_titulo {
-         justify-content: space-between;
-         align-items: baseline;
-         h1 {
-           font-size: 34px;
-           color: $color-dark-gray;
-         }
-         .produto_desc_titulo_avaliacao{
-           color: yellow;
-           font-size: 12px;
-           :last-child {
-             color: $color-light-gray;
-           }
-         }
-       }
-       hr {
-         margin: 10px 0;
-         background-color: #e1e1e1;
-       }
-       .produto_desc_preco {
-         .produto_desc_preco_antigo {
-           color: #b5b5b5;
-         }
-         .produto_desc_preco_porcentagem {
-           background-color: #11C319;
-           color: white;
-           padding: 7px;
-           border-radius: 4px;
-         }
-         .produto_desc_preco_atual_boleto {
-           color: $color-light-gray;
-           padding-bottom: 25px;
-           span {
-             font-size: 32px;
-             color: $verde;
-           }
-           i {
-             font-size: 20px;
-           }
-         }
-         .produto_desc_preco_atual_cartao_prazo {
-           color: $color-light-gray;
-           span {
-             font-size: 20px;
-             color: $color-french;
-           }
-         }
-         .produto_desc_preco_atual_cartao_prazo_uma {
-           color: $color-light-gray;
-           span {
-             font-size: 16px;
-             color: $color-french;
-           }
-           a {
-             text-decoration: underline;
-             color: $color-french;
-             font-size: 14px;
-           }
-         }
-       }
-       .produto_desc_acoes {
-        .produto_desc_acoes_cor {
+  hr {
+    margin: 10px 0;
+    background-color: #e1e1e1;
+  }
+  .produto {
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+    .produto_imagem {
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+      .produto_imagem_miniaturas {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 900px) {
+          display: none;
+        }
+        .imagem {
+          width: 120px;
+          border: 1px solid $color-french;
+          border-radius: $radius-4;
+          margin-top: 5px;
+        }
+        .active {
+          border: 2px solid $color-french;
+        }
+      }
+      .produto_imagem_principal {
+        .produto_imagem_principal_dots {
+          padding-bottom: 15px;
           color: $color-light-gray;
+          @media (min-width: 901px) {
+            display: none;
+          }
+          .active {
+            color: $color-fuchsia;
+          }
+        }
+        .imagem.principal {
+          @media screen and (min-width: 600px) and (max-width: 900px) {
+            width: 55%;
+          }
+          @media screen and (max-width: 599px) {
+            width: 65%;
+          }
+        }
+        .button {
+          background-color: $color-light-gray;
+          color: $branco;
+          font-size: 13px;
+          &:hover {
+            background-color: $color-dark-gray;
+          }
+          i {
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+    .produto_desc {
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+      .produto_desc_titulo {
+        justify-content: space-between;
+        align-items: baseline;
+        h1 {
+          font-size: 34px;
+          color: $color-dark-gray;
+          @media (max-width: 465px) {
+            font-size: 20px;
+            font-weight: bold;
+          }
+          @media screen and (min-width: 769px) and (max-width: 904px) {
+            font-size: 28px;
+          }
+        }
+        .produto_desc_titulo_avaliacao {
+          color: yellow;
+          font-size: 12px;
+          @media screen and (min-width: 769px) and (max-width: 904px) {
+            font-size: 10px;
+          }
+          :last-child {
+            color: $color-light-gray;
+          }
+        }
+      }
+      hr {
+        margin: 10px 0;
+        background-color: #e1e1e1;
+      }
+      .produto_desc_preco {
+        .produto_desc_preco_antigo {
+          color: #b5b5b5;
+        }
+        .produto_desc_preco_porcentagem {
+          background-color: #11C319;
+          color: white;
+          padding: 7px;
+          border-radius: 4px;
+        }
+        .produto_desc_preco_atual_boleto {
+          color: $color-light-gray;
+          padding-bottom: 25px;
+          span {
+            font-size: 32px;
+            color: $verde;
+          }
+          i {
+            font-size: 20px;
+          }
+        }
+        .produto_desc_preco_atual_cartao_prazo {
+          color: $color-light-gray;
+          span {
+            font-size: 20px;
+            color: $color-french;
+          }
+        }
+        .produto_desc_preco_atual_cartao_prazo_uma {
+          color: $color-light-gray;
+          span {
+            font-size: 16px;
+            color: $color-french;
+          }
+          a {
+            text-decoration: underline;
+            color: $color-french;
+            font-size: 14px;
+          }
+        }
+      }
+      .produto_desc_acoes {
+        flex-wrap: wrap;
+        @media (max-width: 400px) {
+          justify-content: center;
+        }
+        div {
+          @media (max-width: 900px) {
+            &:first-child.is-flex {
+              width: 50%;
+            }
+          }
+        }
+        .produto_desc_acoes_cor {
+          color: $color-dark-gray;
           div {
             width: 50px;
-            height: 50px;
+            height: 35px;
             background-color: #26252b;
             border-radius: $radius-4;
             &:hover {
@@ -117,7 +157,49 @@
             }
           }
         }
-       }
-     }
-   }
- }
+        .produto_desc_acoes_qtd {
+          padding-left: 30px;
+          color: $color-dark-gray;
+        }
+        .produto_desc_acoes_comprar {
+          @media (max-width: 400px) {
+            padding-top: 20px;
+          }
+          .button {
+            font-size: 25px;
+            background-color: $verde;
+            color: $branco;
+            i {
+              padding-right: 5px;
+            }
+          }
+        }
+        .produto_desc_acoes_frete {
+          @media (max-width: 400px) {
+            padding-top: 30px;
+          }
+          margin-top: -20px;
+        }
+        .produto_desc_acoes_comprar_clique {
+          text-align: right;
+          .button {
+            width: 176px;
+            font-size: 14px;
+            background-color: $color-light-gray;
+            color: $branco;
+            &:hover {
+              background-color: $color-dark-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+  .kit {
+    h1 {
+      padding-top: 15px;
+      font-size: 24px;
+      color: #3a3a59;
+    }
+  }
+}

@@ -18,6 +18,11 @@
           </div>
           <div class="column produto_imagem_principal has-text-centered">
             <img class="imagem principal" id="zoom_image" src="/static/images/produto01.jpg" data-zoom-image="/static/images/produto01.jpg">
+            <div class="produto_imagem_principal_dots">
+              <i class="fas fa-circle active"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+            </div>
             <button class="button"><i class="fas fa-heart"></i>Adicionar aos favoritos</button>
             <button class="button"><i class="fas fa-bell"></i> Alerta de preço</button>
             <button class="button"><i class="fas fa-exchange-alt"></i>Comparar</button>
@@ -67,12 +72,13 @@
           </div>
         </div>
         <hr>
-        <div class="produto_desc_acoes is-flex">
-          <div class="produto_desc_acoes_cor">
+        <div class="produto_desc_acoes is-flex is-space-between">
+          <div class="is-flex">
+            <div class="produto_desc_acoes_cor">
             Cor
             <div></div>
           </div>
-          <div class="produto_desc_acoes_qtd">
+            <div class="produto_desc_acoes_qtd">
             Quantidade
             <div class="seletor_quantidade">
               <div class="field">
@@ -89,12 +95,95 @@
               </div>
             </div>
           </div>
-          <div class="produto_desc_acoes_comprar">
-
           </div>
+          <div>
+            <div class="produto_desc_acoes_comprar">
+            <button class="button">
+              <i class="fas fa-shopping-cart"></i>
+              Comprar
+            </button>
+          </div>
+            <div class="produto_desc_acoes_comprar_clique">
+              <button class="button">Compre com 1 clique!</button>
+            </div>
+          </div>
+          <div class="produto_desc_acoes_frete">
+              <span>Calcular frete</span>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input is-medium" type="email" placeholder="CEP">
+                <span class="icon is-left">
+                  <i class="fas fa-truck"></i>
+                </span>
+                <span class="icon is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+            </div>
         </div>
       </div>
     </div>
+    <hr>
+    <div class="kit columns">
+      <h1>Aproveite e leve junto!</h1>
+    </div>
+    <section class="accordions">
+      <article class="accordion">
+        <div class="accordion-header toggle">
+          <p>Descrição</p>
+          <button class="toggle" aria-label="toggle"></button>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          </div>
+        </div>
+      </article>
+      <article class="accordion">
+        <div class="accordion-header">
+          <p>Especificações</p>
+          <button class="toggle" aria-label="toggle"></button>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          </div>
+        </div>
+      </article>
+      <article class="accordion">
+        <div class="accordion-header">
+          <p>Quem comprou, compra também</p>
+          <button class="toggle" aria-label="toggle"></button>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          </div>
+        </div>
+      </article>
+      <article class="accordion">
+        <div class="accordion-header">
+          <p>O que vem na caixa?</p>
+          <button class="toggle" aria-label="toggle"></button>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          </div>
+        </div>
+      </article>
+      <article class="accordion">
+        <div class="accordion-header">
+          <p>Comentários e avaliações</p>
+          <button class="toggle" aria-label="toggle"></button>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          </div>
+        </div>
+      </article>
+    </section>
+
   </div>
 </template>
 <script>

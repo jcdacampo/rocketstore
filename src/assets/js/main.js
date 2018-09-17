@@ -81,5 +81,7 @@ $(document).ready(function () {
    * Zoom imagem produto
    */
   $("#zoom_image").elevateZoom();
+
+  var accordions = bulmaAccordion.attach();
 });
 
