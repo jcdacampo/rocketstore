@@ -1,4 +1,4 @@
-.container {
+.pagina_produto  {
   hr {
     margin: 10px 0;
     background-color: #e1e1e1;
@@ -195,11 +195,99 @@
       }
     }
   }
-  .kit {
+  .compre_junto {
     h1 {
       padding-top: 15px;
       font-size: 24px;
       color: #3a3a59;
+    }
+    .kit {
+      padding: 20px 0;
+      @media (max-width: 890px) {
+        flex-wrap: wrap;
+      }
+      i {
+        font-size: 34px;
+        color: $color-french;
+      }
+      .kit_produto {
+        &:hover {
+
+        }
+        .kit_produto_image {
+          .image {
+            max-width: 150px;
+            margin: auto;
+          }
+        }
+        .kit_produto_desc {
+          color: $color-dark-gray;
+          .nome {
+            min-height: 50px;
+          }
+          .preco-antigo {
+            font-size: 14px;
+            color: #999;
+          }
+          .preco-real {
+            font-size: 26px;
+          }
+        }
+        .kit_produto_acoes {
+          .button {
+            background-color: $verde;
+            color: $branco;
+            font-size: 20px;
+          }
+          p {
+            &:nth-child(1) {
+              color: $color-dark-gray;
+              font-size: 20px;
+            }
+            &:nth-child(2) {
+               color: #acacac;
+               font-size: 14px;
+            }
+            &:nth-child(3) {
+              color: $color-french;
+              font-size: 30px;
+            }
+            &:nth-child(4) {
+              color: $color-dark-gray;
+              font-size: 20px;
+              padding-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .detalhes {
+    .accordions {
+      .accordion {
+        &:last-child .accordion-header {
+          border-bottom-left-radius: $radius-4;
+          border-bottom-right-radius: $radius-4;
+        }
+        .accordion-header {
+          background-color: $color-dark-gray;
+          p {
+            padding-left: 10px;
+          }
+          i {
+            color: $branco;
+            font-size: 20px;
+          }
+          .toggle {
+            background-color: transparent;
+            &:before {
+              font-size: 28px;
+              font-weight: bold;
+              top: -10px;
+            }
+          }
+        }
+      }
     }
   }
 }

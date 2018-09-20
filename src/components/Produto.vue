@@ -1,5 +1,5 @@
 <template>
-  <div class="container is-fullhd">
+  <div class="container pagina_produto is-fullhd">
     <nav class="breadcrumb" aria-label="breadcrumbs">
       <ul>
         <li><a href="#">Início</a></li>
@@ -123,13 +123,59 @@
       </div>
     </div>
     <hr>
-    <div class="kit columns">
-      <h1>Aproveite e leve junto!</h1>
+    <div class="compre_junto">
+      <h1><b>Aproveite e leve junto!</b></h1>
+      <div class="columns kit">
+        <div class="column kit_produto is-2-desktop has-text-centered">
+          <div class="kit_produto_image">
+            <img class="image" src="/static/images/produto03.png">
+          </div>
+          <div class="kit_produto_desc">
+            <div class="nome is-flex is-vertical-center"><b>iPhone X</b></div>
+          </div>
+        </div>
+        <div class="kit_operador is-flex is-vertical-center"><i class="fas fa-plus"></i></div>
+        <div class="column kit_produto is-3-desktop has-text-centered">
+          <div class="kit_produto_image">
+            <img class="image" src="/static/images/acessorio01.jpg">
+          </div>
+          <div class="kit_produto_desc">
+            <div class="nome is-flex is-vertical-center"><b>Película Protetora iPhone X</b></div>
+            <p class="preco-antigo">de <strike>R$ 109,00</strike> por</p>
+            <p class="preco-real">R$ 39,00</p>
+          </div>
+        </div>
+        <div class="kit_operador is-flex is-vertical-center"><i class="fas fa-plus"></i></div>
+        <div class="column kit_produto is-3-desktop has-text-centered">
+        <div class="kit_produto_image">
+          <img class="image" src="/static/images/acessorio02.jpg">
+        </div>
+        <div class="kit_produto_desc">
+          <div class="nome is-flex is-vertical-center"><b>Capa Silicone iPhone X</b></div>
+          <p class="preco-antigo">de <strike>R$ 165,00</strike> por</p>
+          <p class="preco-real">R$ 75,00</p>
+        </div>
+      </div>
+        <div class="kit_operador is-flex is-vertical-center"><i class="fas fa-equals"></i></div>
+        <div class="column kit_produto is-3-desktop is-flex is-vertical-center has-text-centered">
+          <div class="kit_produto_acoes">
+            <p>Leve os 3 produtos por:</p>
+            <p>de <strike>R$ 5273,00</strike></p>
+            <p>R$ 5113,00</p>
+            <p>Economize <b>R$ 160,00</b></p>
+            <button class="button">Comprar os 3 produtos</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <section class="accordions">
-      <article class="accordion">
+    <div class="detalhes">
+      <section class="accordions">
+      <article class="accordion descricao">
         <div class="accordion-header toggle">
-          <p>Descrição</p>
+          <div class="is-flex">
+            <i class="fas fa-file-alt"></i>
+            <p>Descrição</p>
+          </div>
           <button class="toggle" aria-label="toggle"></button>
         </div>
         <div class="accordion-body">
@@ -138,9 +184,12 @@
           </div>
         </div>
       </article>
-      <article class="accordion">
+      <article class="accordion specs">
         <div class="accordion-header">
-          <p>Especificações</p>
+          <div class="is-flex">
+            <i class="fas fa-pencil-ruler"></i>
+            <p>Especificações</p>
+          </div>
           <button class="toggle" aria-label="toggle"></button>
         </div>
         <div class="accordion-body">
@@ -149,9 +198,12 @@
           </div>
         </div>
       </article>
-      <article class="accordion">
+      <article class="accordion compra_tambem">
         <div class="accordion-header">
-          <p>Quem comprou, compra também</p>
+          <div class="is-flex">
+            <i class="fas fa-cart-plus"></i>
+            <p>Quem comprou, compra também</p>
+          </div>
           <button class="toggle" aria-label="toggle"></button>
         </div>
         <div class="accordion-body">
@@ -160,9 +212,12 @@
           </div>
         </div>
       </article>
-      <article class="accordion">
+      <article class="accordion caixa">
         <div class="accordion-header">
-          <p>O que vem na caixa?</p>
+          <div class="is-flex">
+            <i class="fas fa-box-open"></i>
+            <p>O que vem na caixa?</p>
+          </div>
           <button class="toggle" aria-label="toggle"></button>
         </div>
         <div class="accordion-body">
@@ -171,9 +226,12 @@
           </div>
         </div>
       </article>
-      <article class="accordion">
+      <article class="accordion avaliacoes">
         <div class="accordion-header">
-          <p>Comentários e avaliações</p>
+          <div class="is-flex">
+            <i class="fas fa-comment"></i>
+            <p>Comentários e avaliações</p>
+          </div>
           <button class="toggle" aria-label="toggle"></button>
         </div>
         <div class="accordion-body">
@@ -183,7 +241,7 @@
         </div>
       </article>
     </section>
-
+    </div>
   </div>
 </template>
 <script>
