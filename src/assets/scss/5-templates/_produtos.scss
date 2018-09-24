@@ -158,6 +158,7 @@
           }
         }
         .produto_desc_acoes_qtd {
+          z-index: 0;
           padding-left: 30px;
           color: $color-dark-gray;
         }
@@ -175,6 +176,7 @@
           }
         }
         .produto_desc_acoes_frete {
+          z-index: 0;
           @media (max-width: 400px) {
             padding-top: 30px;
           }
@@ -264,7 +266,25 @@
   }
   .detalhes {
     .accordions {
+      h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: $color-dark-gray;
+      }
+      .accordion.is-active {
+        .accordion-body {
+          max-height: 100%;
+        }
+      }
       .accordion {
+        .accordion-content {
+          @media (max-width: 530px) {
+            padding-top: 10px;
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
         &:last-child .accordion-header {
           border-bottom-left-radius: $radius-4;
           border-bottom-right-radius: $radius-4;
@@ -286,6 +306,421 @@
               top: -10px;
             }
           }
+        }
+      }
+      .descricao {
+        .accordion-content {
+          padding: 1em 0;
+          p {
+            text-align: left;
+            color: $color-light-gray;
+            padding: 10px 10px;
+          }
+        }
+      }
+      .specs {
+        .spec_item {
+          &:not(:first-child) {
+            padding-top: 20px;
+          }
+          hr {
+            width: 15%;
+          }
+          b {
+            color: $color-dark-gray;
+          }
+          .spec_linha {
+            display: flex;
+            padding: 5px;
+            color: $color-dark-gray;
+            .spec_primeira {
+              display: table-cell;
+              width: 30%;
+            }
+            .spec_segunda {
+              display: table-cell;
+              width: 70%;
+            }
+          }
+          .zebrado {
+            background-color: #e2e2e2;
+            border-radius: $radius-4;
+          }
+        }
+      }
+      .avaliacoes {
+        .avaliacoes_estrelas {
+          .avaliacoes_estrelas_excelente {
+            display: flex;
+            align-items: center;
+            span {
+              padding: 0 5px;
+              color: $color-dark-gray;
+            }
+            .estrela {
+              color: $color-light-gray;
+              float: left;
+              i {
+                font-size: 12px;
+                @media (max-width: 395px) {
+                  font-size: 10px;
+                }
+              }
+              .amarela {
+                color: yellow;
+              }
+            }
+            .desc {
+              width: 22%;
+              @media (max-width: 395px) {
+                font-size: 12px;
+              }
+            }
+            .barra {
+              width: 35%;
+              height: 15px;
+              background-color: #ccc;
+              border-radius: $radius-4;
+              margin-top: 2px;
+              .barra_progresso {
+                width: 90%;
+                height: 15px;
+                float: left;
+                border-radius: $radius-4;
+                background-color: $verde;
+              }
+            }
+            .numero {
+              float: left;
+            }
+          }
+          .avaliacoes_estrelas_otimo {
+            display: flex;
+            align-items: center;
+            span {
+              padding: 0 5px;
+              color: $color-dark-gray;
+            }
+            .estrela {
+              color: $color-light-gray;
+              float: left;
+              i {
+                font-size: 12px;
+                @media (max-width: 395px) {
+                  font-size: 10px;
+                }
+              }
+              .amarela {
+                color: yellow;
+              }
+            }
+            .desc {
+              width: 22%;
+              @media (max-width: 395px) {
+                font-size: 12px;
+              }
+            }
+            .barra {
+              width: 35%;
+              height: 15px;
+              background-color: #ccc;
+              border-radius: $radius-4;
+              margin-top: 2px;
+              .barra_progresso {
+                width: 80%;
+                height: 15px;
+                float: left;
+                border-radius: $radius-4;
+                background-color: $verde;
+              }
+            }
+            .numero {
+              float: left;
+            }
+          }
+          .avaliacoes_estrelas_bom {
+            display: flex;
+            align-items: center;
+            span {
+              padding: 0 5px;
+              color: $color-dark-gray;
+            }
+            .estrela {
+              color: $color-light-gray;
+              float: left;
+              i {
+                font-size: 12px;
+                @media (max-width: 395px) {
+                  font-size: 10px;
+                }
+              }
+              .amarela {
+                color: yellow;
+              }
+            }
+            .desc {
+              width: 22%;
+              @media (max-width: 395px) {
+                font-size: 12px;
+              }
+            }
+            .barra {
+              width: 35%;
+              height: 15px;
+              background-color: #ccc;
+              border-radius: $radius-4;
+              margin-top: 2px;
+              .barra_progresso {
+                width: 55%;
+                height: 15px;
+                float: left;
+                border-radius: $radius-4;
+                background-color: $verde;
+              }
+            }
+            .numero {
+              float: left;
+            }
+          }
+          .avaliacoes_estrelas_regular {
+            display: flex;
+            align-items: center;
+            span {
+              padding: 0 5px;
+              color: $color-dark-gray;
+            }
+            .estrela {
+              color: $color-light-gray;
+              float: left;
+              i {
+                font-size: 12px;
+                @media (max-width: 395px) {
+                  font-size: 10px;
+                }
+              }
+              .amarela {
+                color: yellow;
+              }
+            }
+            .desc {
+              width: 22%;
+              @media (max-width: 395px) {
+                font-size: 12px;
+              }
+            }
+            .barra {
+              width: 35%;
+              height: 15px;
+              background-color: #ccc;
+              border-radius: $radius-4;
+              margin-top: 2px;
+              .barra_progresso {
+                width: 17%;
+                height: 15px;
+                float: left;
+                border-radius: $radius-4;
+                background-color: $verde;
+              }
+            }
+            .numero {
+              float: left;
+            }
+          }
+          .avaliacoes_estrelas_ruim {
+            display: flex;
+            align-items: center;
+            span {
+              padding: 0 5px;
+              color: $color-dark-gray;
+            }
+            .estrela {
+              color: $color-light-gray;
+              float: left;
+              i {
+                font-size: 12px;
+                @media (max-width: 395px) {
+                  font-size: 10px;
+                }
+              }
+              .amarela {
+                color: yellow;
+              }
+            }
+            .desc {
+              width: 22%;
+              @media (max-width: 395px) {
+                font-size: 12px;
+              }
+            }
+            .barra {
+              width: 35%;
+              height: 15px;
+              background-color: #ccc;
+              border-radius: $radius-4;
+              margin-top: 2px;
+              .barra_progresso {
+                width: 2%;
+                height: 15px;
+                float: left;
+                border-radius: $radius-4;
+                background-color: $verde;
+              }
+            }
+            .numero {
+              float: left;
+            }
+          }
+
+        }
+        .avaliacoes_nota {
+          p, button {
+            color: $color-dark-gray;
+          }
+          .primeiro {
+            font-size: 18px;
+          }
+          .segundo {
+            font-size: 13px;
+            color: #9c9c9c;
+          }
+          .button {
+            background-color: $color-light-gray;
+            color: $branco;
+            &:hover {
+              background-color: $color-dark-gray;
+            }
+
+          }
+        }
+      }
+      .comentarios {
+        .comentarios_nome {
+          p {
+            color: $color-dark-gray;
+          }
+          .nome {
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .data, .cidade {
+            font-size: 14px;
+            color: $color-light-gray;
+          }
+        }
+        .comentarios_comentario {
+          .comentario_produto {
+            .avaliacao_produto {
+              font-size: 12px;
+              color: #9c9c9c;
+            }
+            b {
+              color: $color-dark-gray;
+              font-size: 18px;
+            }
+            .estrelas_produto {
+              color: yellow;
+              font-size: 14px;
+            }
+            p {
+              color: $color-dark-gray;
+            }
+          }
+          .comentario_loja {
+            padding-top: 15px;
+            .avaliacao_loja {
+              font-size: 12px;
+              color: #9c9c9c;
+            }
+            b {
+              color: $color-dark-gray;
+              font-size: 18px;
+            }
+            .estrelas_loja {
+              color: yellow;
+              font-size: 14px;
+            }
+            p {
+              color: $color-dark-gray;
+            }
+          }
+          .comentario_proecontra {
+            padding-top: 10px;
+            .column {
+              padding-left: 0;
+            }
+            .pro {
+              color: $color-dark-gray;
+              font-size: 14px;
+              b {
+                font-size: 16px;
+                color: $verde;
+              }
+            }
+            .contra {
+              color: $color-dark-gray;
+              font-size: 14px;
+              b {
+                font-size: 16px;
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal {
+    .modal-content, .modal-card {
+      overflow-x: hidden;
+      margin: 1px;
+      padding: 20px;
+      @media (max-width: 490px) {
+        padding: 0;
+      }
+      @media (max-width: 768px) {
+        overflow-y: hidden;
+        height: 100%;
+      }
+      .modal-card-title {
+        @media (max-width: 490px) {
+          font-size: 16px;
+        }
+        color: $color-dark-gray;
+      }
+      .columns {
+        color: $color-dark-gray;
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+        p, img {
+          padding-top: 10px;
+        }
+        hr {
+          width: 60%;
+          @media (max-width: 768px) {
+            margin: auto;
+          }
+        }
+        .foto {
+          img {
+            @media (max-width: 768px) {
+              width: 160px;
+            }
+          }
+        }
+      }
+      .modal-card-foot {
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        .continuar {
+          @media (max-width: 476px) {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+          }
+          color: $color-dark-gray;
         }
       }
     }

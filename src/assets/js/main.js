@@ -82,6 +82,11 @@ $(document).ready(function () {
    */
   $("#zoom_image").elevateZoom();
 
+  /**
+   * Inicia accordion
+   * @type {Array}
+   */
   var accordions = bulmaAccordion.attach();
 });
+
 
