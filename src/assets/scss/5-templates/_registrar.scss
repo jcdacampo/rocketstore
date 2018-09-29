@@ -1,0 +1,25 @@
+.registrar {
+  padding-top: 10px;
+  .registrar_dados {
+    flex-direction: column;
+    h1 {
+      padding-bottom: 20px;
+      font-size: 28px;
+      color: $color-light-gray;
+    }
+    .registrar_dados_campos {
+      padding: 25px 0;
+      width: 40%;
+      .field {
+        input {
+        }
+        label {
+          color: $color-dark-gray;
+        }
+      }
+      .metade {
+        width: 50%;
+      }
+    }
+  }
+}
