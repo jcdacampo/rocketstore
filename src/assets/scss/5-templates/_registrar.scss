@@ -2,6 +2,11 @@
   padding-top: 10px;
   .registrar_dados {
     flex-direction: column;
+    .button {
+      width: 40%;
+      color: $branco;
+      background-color: $verde;
+    }
     h1 {
       padding-bottom: 20px;
       font-size: 28px;
@@ -10,12 +15,21 @@
     .registrar_dados_campos {
       padding: 25px 0;
       width: 40%;
+      @media (max-width: 850px) {
+        width: 60%;
+      }
+      @media (max-width: 530px) {
+        width: 80%;
+      }
       .field {
         input {
         }
         label {
           color: $color-dark-gray;
         }
+      }
+      .metade.sexo {
+        width: 100%;
       }
       .metade {
         width: 50%;

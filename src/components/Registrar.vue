@@ -7,8 +7,7 @@
       </ul>
     </nav>
     <div class="registrar_dados is-vertical-center">
-      <h1>Nos informe alguns dados</h1>
-
+      <h1 class="has-text-centered">Nos informe alguns dados</h1>
       <div class="registrar_dados_campos">
         <div class="field">
           <label>Seu email:</label>
@@ -38,7 +37,6 @@
           </p>
         </div>
       </div>
-
       <div class="registrar_dados_campos">
         <div class="field">
           <label>Informe seu nome:</label>
@@ -67,7 +65,7 @@
             </span>
             </p>
           </div>
-        <div class="field metade">
+        <div class="field metade sexo">
             <label>Sexo:</label>
             <label class="radio">
               <input type="radio" name="answer">
@@ -82,7 +80,6 @@
 
 
       </div>
-
       <div class="registrar_dados_campos">
         <div class="field">
           <label>Telefone:</label>
@@ -103,6 +100,7 @@
           </p>
         </div>
       </div>
+      <button class="button">Concluir</button>
 
     </div>
   </div>
