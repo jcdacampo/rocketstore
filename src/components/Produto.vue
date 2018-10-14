@@ -470,8 +470,52 @@
             <button class="toggle" aria-label="toggle"></button>
           </div>
           <div class="accordion-body">
-            <div class="accordion-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+            <div class="accordion-content columns is-multiline is-mobile">
+              <div class="column compra_tambem_produto is-3-desktop is-6-mobile has-text-centered">
+                <div class="compra_tambem_produto_image">
+                  <img class="image" src="/static/images/tbm1.png">
+                </div>
+                <div class="compra_tambem_produto_desc">
+                  <div class="nome is-flex is-vertical-center"><b>Zenfone 5</b></div>
+                  <p class="preco-antigo">de <strike>R$ 2000,0</strike> por</p>
+                  <p class="preco-real">R$ 1750,00</p>
+                  <button class="button hvr-grow">Comprar</button>
+                </div>
+              </div>
+              <div class="column compra_tambem_produto is-3-desktop is-6-mobile has-text-centered">
+                <div class="compra_tambem_produto_image">
+                  <img class="image" src="/static/images/tbm2.png">
+                </div>
+                <div class="compra_tambem_produto_desc">
+                  <div class="nome is-flex is-vertical-center"><b>iPhone 7 RED</b></div>
+                  <p class="preco-antigo">de <strike>R$ 3350,00</strike> por</p>
+                  <p class="preco-real">R$ 2850,00</p>
+                  <button class="button hvr-grow">Comprar</button>
+                </div>
+              </div>
+              <div class="column compra_tambem_produto is-3-desktop is-6-mobile has-text-centered">
+                <div class="compra_tambem_produto_image">
+                  <img class="image" src="/static/images/tbm3.png">
+                </div>
+                <div class="compra_tambem_produto_desc">
+                  <div class="nome is-flex is-vertical-center"><b>Moto Z</b></div>
+                  <p class="preco-antigo">de <strike>R$ 2550,00</strike> por</p>
+                  <p class="preco-real">R$ 2250,00</p>
+                  <button class="button hvr-grow">Comprar</button>
+                </div>
+              </div>
+              <div class="column compra_tambem_produto is-3-desktop is-6-mobile has-text-centered">
+                <div class="compra_tambem_produto_image">
+                  <img class="image" src="/static/images/tbm4.jpg">
+                </div>
+                <div class="compra_tambem_produto_desc">
+                  <div class="nome is-flex is-vertical-center"><b>Xiaomi Mi 8</b></div>
+                  <p class="preco-antigo">de <strike>R$ 1350,00</strike> por</p>
+                  <p class="preco-real">R$ 999,00</p>
+                  <button class="button hvr-grow">Comprar</button>
+                </div>
+              </div>
+
             </div>
           </div>
         </article>
@@ -485,7 +529,11 @@
           </div>
           <div class="accordion-body">
             <div class="accordion-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              <li>1 Apple iPhone X 256GB</li>
+              <li>1 Adaptador de Lightning para Conector de Fones 3,5mm</li>
+              <li>1 Cabo de Lightning para USB</li>
+              <li>1 Carregador USB</li>
+              <li>1 Documentação</li>
             </div>
           </div>
         </article>

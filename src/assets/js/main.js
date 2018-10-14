@@ -87,6 +87,46 @@ $(document).ready(function () {
    * @type {Array}
    */
   var accordions = bulmaAccordion.attach();
+
+  /**
+   * jQUery Steps para o finalizar compra
+   */
+  $("#wizard").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "slideLeft",
+    autoFocus: true,
+    labels: {
+      cancel: "Cancelar",
+      finish: "Finalizar compra",
+      next: "Próximo",
+      previous: "Voltar",
+      loading: "Carregando ..."
+    }
+  });
+
+  /**
+   * Cartão de crédito
+   */
+  var card = new Card({
+    form: '#form-pgto',
+    container: '.card-wrapper',
+  });
 });
+
+$(function(){
+  // hide all content
+  $('.accordeon_content').hide();
+
+  $('.accordeon_title').click(function(){
+    $(this).parent().toggleClass('active').siblings().removeClass('active');
+    $('.accordeon_content').slideUp();
+
+    if(!$(this).next().is(":visible")) {
+      $(this).next().slideDown();
+    }
+  });
+});
+
 
 

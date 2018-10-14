@@ -16,6 +16,7 @@ import Minha_Conta from '@/components/MinhaConta';
 import Carrinho from '@/components/Carrinho';
 import Checkout from '@/components/Checkout';
 import Produto from '@/components/Produto';
+import FinalizarCompra from '@/components/FinalizarCompra';
 
 Vue.use(Router);
 /**
@@ -103,6 +104,11 @@ export default new Router({
       path: '/produto/',
       name: 'Produto',
       component: Produto
+    },
+    {
+      path: '/finalizar-compra/',
+      name: 'FinalizarCompra',
+      component: FinalizarCompra
     },
   ]
 })

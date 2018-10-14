@@ -667,6 +667,46 @@
           }
         }
       }
+      .caixa {
+        li {
+          color: $color-dark-gray;
+          line-height: 34px;
+        }
+      }
+      .compra_tambem {
+        .compra_tambem_produto {
+          &:hover {
+
+          }
+          @media (max-width: 420px) {
+            width: 100%;
+          }
+          .compra_tambem_produto_image {
+            .image {
+              max-width: 150px;
+              margin: auto;
+            }
+          }
+          .compra_tambem_produto_desc {
+            color: $color-dark-gray;
+            .nome {
+              min-height: 75px;
+            }
+            .preco-antigo {
+              font-size: 14px;
+              color: #999;
+            }
+            .preco-real {
+              font-size: 26px;
+            }
+            .button {
+              width: 90%;
+              background-color: $color-french;
+              color: $branco;
+            }
+          }
+        }
+      }
     }
   }
   .modal {
