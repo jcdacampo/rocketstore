@@ -1,0 +1,109 @@
+.notebooks {
+  .categoria_filtro {
+    .faixa-de-preco,
+    .tamanho-tela,
+    .processador,
+    .memoria,
+    .marca,
+    .cor,
+    .tipo{
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      span {
+        font-size: 16px;
+        background-color: $color-fuchsia;
+        color: $branco;
+        padding: 3px;
+        border-radius: 4px;
+        i {
+          padding-right: 5px;
+        }
+      }
+      label {
+        color: $color-dark-gray;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 0;
+      }
+    }
+
+    .tamanho-tela,
+    .processador,
+    .memoria,
+    .marca,
+    .cor,
+    .tipo {
+      padding-top: 15px;
+    }
+  }
+  .categoria_produtos {
+    .classificacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width: 358px) {
+        justify-content: center;
+        div {
+          padding-top: 5px;
+        }
+      }
+    .select {
+      select {
+        font-size: 13px;
+      }
+    }
+    div, button {
+      color: $color-dark-gray;
+      font-size: 13px;
+    }
+    .itens_pagina {
+      .select {
+        padding: 0 5px;
+      }
+    }
+  }
+    .produtos {
+      padding-top: 20px;
+      .column {
+        @media (max-width: 465px) {
+          width: 100%;
+        }
+      }
+      .produto_box_produto {
+        &:hover {
+
+        }
+        @media (max-width: 420px) {
+          width: 100%;
+        }
+        .produto_box_produto_image {
+          .image {
+            max-width: 150px;
+            margin: auto;
+          }
+        }
+        .produto_box_produto_desc {
+          color: $color-dark-gray;
+          .nome {
+            min-height: 75px;
+          }
+          .preco-antigo {
+            font-size: 14px;
+            color: #999;
+          }
+          .preco-real {
+            font-size: 26px;
+          }
+          .button {
+            width: 90%;
+            background-color: $color-french;
+            color: $branco;
+          }
+        }
+      }
+    }
+  }
+}
