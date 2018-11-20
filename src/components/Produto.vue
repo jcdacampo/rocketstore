@@ -764,7 +764,9 @@
           </section>
           <footer class="modal-card-foot">
             <button class="button continuar" onclick="toggleModal()">Continuar comprando</button>
-            <button class="button is-success">Ir para carrinho</button>
+            <router-link to="/carrinho">
+              <button class="button is-success">Ir para carrinho</button>
+            </router-link>
           </footer>
         </div>
       </div>

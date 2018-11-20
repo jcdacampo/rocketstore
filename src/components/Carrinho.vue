@@ -90,7 +90,9 @@
         </div>
         <div class="column is-12-desktop carrinho_acoes has-text-right">
           <button class="button continuar">Continuar comprando</button>
-          <button class="button fechar">Fechar pedido</button>
+          <router-link to="/finalizar-compra">
+            <button class="button fechar">Fechar pedido</button>
+          </router-link>
         </div>
       </div>
     </div>

@@ -69,7 +69,7 @@
               <p class="has-text-weight-bold">Jean</p>
             </div>
             <div class="header_acoes_icones_usuario">
-              <router-link class="tooltip is-tooltip-bottom" data-tooltip="Minha conta" to="/minha-conta">
+              <router-link class="tooltip is-tooltip-bottom" data-tooltip="Minha conta" to="/entrar">
                 <i class="fas fa-user"></i>
               </router-link>
             </div>
